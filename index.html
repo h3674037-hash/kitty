@@ -1170,7 +1170,7 @@ function checkFlag() {
   const fb = document.getElementById('flagFeedback');
   const val = input.value.trim().toLowerCase();
 
-  if(val === CORRECT_FLAG) {
+  if(val === CORRECT_FLAG.toLowerCase()) {
     input.classList.add('success');
     input.classList.remove('error');
     fb.textContent = '🎀 Correct!! Opening the gate~';
